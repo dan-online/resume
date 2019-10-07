@@ -4,7 +4,7 @@
   "description": "Resume website template that works on a monitor, paper, and phone.",
   "author": "WebPraktikos <hi@webpraktikos.com>",
   "scripts": {
-    "serve": "concurrently \"postcss ./tailwind.css -o public/assets/css/styles.min.css --watch\"  \"live-server ./public \"",
+    "serve": "concurrently \"postcss ./tailwind.css -o public/assets/css/styles.min.css --watch\"  \"live-server ./public --port 8000 \"",
     "dev": "cross-env NODE_ENV=dev postcss ./tailwind.css -o public/assets/css/styles.min.css",
     "public": "cross-env NODE_ENV=public postcss ./tailwind.css -o public/assets/css/styles.min.css"
   },
